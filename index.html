@@ -8,7 +8,7 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <script src="./src/js/script.js" defer></script>
   </head>
-  <body class="w-screen bg-white dark:bg-black">
+  <body class="w-screen bg-white dark:bg-gray-900">
     <!-- nav -->
     <nav class="w-full flex justify-between items-center p-2">
       <!-- logo section -->
@@ -62,25 +62,39 @@
         <div class="w-full p-2 grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-4">
           <!-- blog item -->
           <div
-            class="border group hover:bg-slate-100 p-2 text-gray-800 dark:text-gray-100"
+            class="group hover:bg-gray-600 hover:rounded-md dark:hover:bg-gray-800 p-2 text-gray-800 dark:text-gray-100"
           >
-            <a href="blog-detail.html" title="blog">
-              <div>
-                <div><span>Admin</span> | <span>January 5, 2023</span></div>
-                <h3>what is a blog?</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                  deserunt alias sed! Possimus vitae eius distinctio similique
-                  odio at consectetur rem, accusamus adipisci asperiores
-                  tempore. Nostrum assumenda odit magnam dicta.
-                </p>
-                <a href="blog-detail.html" title="read more">Read full blog</a>
-                <!-- tags -->
-                <div class="flex gap-x-1.5">
-                  <a href="#" title="blog tag title"> <span>blog</span></a>
-                </div>
+            <div class="flex flex-col gap-y-4">
+              <div class="text-sm font-normal dark:text-slate-400">
+                <span>Admin</span> | <span>January 5, 2023</span>
               </div>
-            </a>
+              <h3 class="capitalize text-3xl font-bold dark:text-slate-100">
+                what is a blog?
+              </h3>
+              <p class="text-base dark:text-slate-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                deserunt alias sed! Possimus vitae eius distinctio similique
+                odio at consectetur rem, accusamus adipisci asperiores tempore.
+                Nostrum assumenda odit magnam dicta.
+              </p>
+              <a
+                href="blog-detail.html"
+                title="read more"
+                class="text-sm font-medium text-teal-500 dark:text-teal-600"
+                >Read full blog</a
+              >
+              <!-- tags -->
+              <div class="flex gap-x-1.5">
+                <a
+                  href="#"
+                  title="blog tag title"
+                  class="dark:bg-gray-700 dark:hover:bg-gray-900 px-2 py-0.5 rounded-lg text-sm font-semibold font-sans"
+                  >blog</a
+                >
+                <a href="#" title="blog tag title">blog</a>
+                <a href="#" title="blog tag title">blog</a>
+              </div>
+            </div>
           </div>
           <!-- blog item -->
           <div class="border">
