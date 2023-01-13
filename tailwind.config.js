@@ -3,7 +3,25 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        dark: {
+          background: "#18181b",
+          hover: "#202022",
+          text: "#f4f4f5",
+          textSec: "#a1a1aa",
+          textSubtle: "#48484e",
+        },
+        light: {
+          background: "#ffffff",
+          hover: "#fafafa",
+          text: "#27272a",
+          textSec: "#52525b",
+          textSubtle: "#a1a1aa",
+        },
+        link: "#29beae",
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography")],
 };
