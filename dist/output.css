@@ -1297,6 +1297,10 @@ video {
   isolation: auto;
 }
 
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
 .float-right {
   float: right;
 }
@@ -1449,6 +1453,10 @@ video {
   height: 2.5rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -1463,6 +1471,14 @@ video {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-5\/6 {
+  width: 83.333333%;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .flex-shrink {
@@ -2335,6 +2351,10 @@ video {
   border-width: 1px;
 }
 
+.border-\[0\.5px\] {
+  border-width: 0.5px;
+}
+
 .border-x {
   border-left-width: 1px;
   border-right-width: 1px;
@@ -2397,6 +2417,11 @@ video {
 .border-red-200 {
   --tw-border-opacity: 1;
   border-color: rgb(254 202 202 / var(--tw-border-opacity));
+}
+
+.border-light-textSubtle {
+  --tw-border-opacity: 1;
+  border-color: rgb(161 161 170 / var(--tw-border-opacity));
 }
 
 .bg-light-background {
@@ -3953,6 +3978,11 @@ video {
   margin-bottom: 0;
 }
 
+.dark .dark\:border-dark-textSubtle {
+  --tw-border-opacity: 1;
+  border-color: rgb(72 72 78 / var(--tw-border-opacity));
+}
+
 .dark .dark\:bg-dark-background {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
@@ -4504,12 +4534,24 @@ video {
     grid-column: span 1 / span 1;
   }
 
+  .md\:w-3\/4 {
+    width: 75%;
+  }
+
+  .md\:w-5\/6 {
+    width: 83.333333%;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .md\:gap-x-4 {
@@ -4532,8 +4574,20 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .lg\:w-3\/4 {
+    width: 75%;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .lg\:prose-lg {
@@ -4748,6 +4802,10 @@ video {
 
   .lg\:prose-lg :where(.lg\:prose-lg > :last-child):not(:where([class~="not-prose"] *)) {
     margin-bottom: 0;
+  }
+
+  .lg\:p-6 {
+    padding: 1.5rem;
   }
 
   .dark .dark\:lg\:hover\:\[paint-order\:markers\]:hover {
