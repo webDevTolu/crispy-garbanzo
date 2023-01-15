@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What is a Blog?</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="./src/js/script.js" defer></script>
+  </head>
+  <body class="w-screen bg-light-background dark:bg-dark-background">
+    <!-- nav -->
+    <nav
+      class="w-full flex justify-between items-center py-4 px-4 md:px-6 lg:px-8"
+    >
+      <!-- logo section -->
+      <a href="/" class="cursor-pointer">
+        <p class="text-3xl font-bold text-stone-800 dark:text-stone-100">
+          tech<span class="text-blue-800">Blog</span>
+        </p>
+      </a>
+      <!-- right -->
+      <div class="flex items-center gap-x-4 md:gap-x-6">
+        <!-- search -->
+        <a
+          href="#"
+          title="search"
+          class="cursor-pointer text-gray-800 dark:text-gray-100"
+        >
+          <svg
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-4 h-4 md:w-6 md:h-6"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+        <!-- dark mode toggle -->
+        <div
+          class="h-8 w-8 md:h-10 md:w-10 rounded-full flex items-center justify-center bg-gray-300 hover:bg-gray-400/75 cursor-pointer"
+          onclick="darkModeToggle()"
+        >
+          <svg
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-4 h-4 md:h-6 md:w-6"
+            id="icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.455 2.004a.75.75 0 01.26.77 7 7 0 009.958 7.967.75.75 0 011.067.853A8.5 8.5 0 116.647 1.921a.75.75 0 01.808.083z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </nav>
+    <h1 class="text-light-text dark:text-dark-text">share me</h1>
+  </body>
+</html>
