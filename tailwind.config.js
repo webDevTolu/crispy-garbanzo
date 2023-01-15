@@ -20,8 +20,9 @@ module.exports = {
           textSubtle: "#a1a1aa",
         },
         link: "#29beae",
+        linkHover: "#187167",
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };
