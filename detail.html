@@ -84,9 +84,24 @@
       </a>
       <!-- content -->
       <div class="grid grid-cols-1 gap-y-4 lg:col-span-3">
-        <!-- author -->
-        <div class="text-light-textSubtle dark:text-dark-textSubtle">
-          <span>Admin</span> | <span>January 5, 2023</span>
+        <!-- author + share -->
+        <div class="flex justify-between items-center">
+          <div class="text-light-textSubtle dark:text-dark-textSubtle">
+            <span>Admin</span> | <span>January 5, 2023</span>
+          </div>
+
+          <!-- share -->
+          <a href="#" title="share">
+            <span
+              class="text-light-textSec dark:text-dark-textSec hover:text-light-text dark:hover:text-dark-text"
+            >
+              <svg viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                <path
+                  d="M13 4.5a2.5 2.5 0 11.702 1.737L6.97 9.604a2.518 2.518 0 010 .792l6.733 3.367a2.5 2.5 0 11-.671 1.341l-6.733-3.367a2.5 2.5 0 110-3.475l6.733-3.366A2.52 2.52 0 0113 4.5z"
+                />
+              </svg>
+            </span>
+          </a>
         </div>
         <!-- article -->
         <div class="flex flex-col gap-y-6">
@@ -135,6 +150,62 @@
               class="bg-light-hover dark:bg-dark-hover text-light-textSec dark:text-dark-textSec px-2 py-0.5 rounded-lg text-sm font-semibold font-sans capitalize"
               >react</a
             >
+          </div>
+        </div>
+
+        <!-- comments -->
+        <div class="mt-4 flex flex-col gap-y-1">
+          <h3
+            class="text-2xl md:text-3xl font-bold text-light-text dark:text-dark-text"
+          >
+            Recent Comments
+          </h3>
+          <p
+            class="text-lg font-medium text-light-textSec dark:text-dark-textSec"
+          >
+            3
+            <span class="font-normal text-base italic">comments</span>
+          </p>
+        </div>
+        <!-- commentList -->
+        <div
+          class="flex flex-col divide-y divide-light-textSubtle dark:divide-dark-textSubtle w-full"
+        >
+          <!-- commentItem -->
+          <div class="flex flex-col gap-y-2 p-2 pb-4">
+            <p class="text-light-text dark:text-dark-text text-sm font-medium">
+              webDevTolu <span class="font-normal"> | January 5, 2023</span>
+            </p>
+            <p
+              class="text-light-textSec dark:text-dark-textSec text-base font-normal"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              pariatur vel cumque dolorum magnam.
+            </p>
+          </div>
+          <!-- commentItem -->
+          <div class="flex flex-col gap-y-2 p-2 pb-4">
+            <p class="text-light-text dark:text-dark-text text-sm font-medium">
+              webDevTolu <span class="font-normal"> | January 5, 2023</span>
+            </p>
+            <p
+              class="text-light-textSec dark:text-dark-textSec text-base font-normal"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              pariatur vel cumque dolorum magnam.
+            </p>
+          </div>
+          <!-- commentItem -->
+          <div class="flex flex-col gap-y-2 p-2 pb-4">
+            <p class="text-light-text dark:text-dark-text text-sm font-medium">
+              webDevTolu <span class="font-normal"> | January 5, 2023</span>
+            </p>
+            <p
+              class="text-light-textSec dark:text-dark-textSec text-base font-normal"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              pariatur vel cumque dolorum magnam.
+            </p>
           </div>
         </div>
       </div>
