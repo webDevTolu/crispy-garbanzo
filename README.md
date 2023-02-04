@@ -6,7 +6,8 @@ django blog frontend
 
 ## TODO: Implement the following
 
-- style search form field
+-[x] style search form field
+
 - restyle toggle button
 - add 404 page
 - add rss feed to search

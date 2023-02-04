@@ -8,7 +8,9 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <script src="./src/js/script.js" defer></script>
   </head>
-  <body class="w-screen bg-light-background dark:bg-dark-background font-body">
+  <body
+    class="bg-light-background dark:bg-dark-background font-body scrollbar-hide"
+  >
     <!-- nav -->
     <nav
       class="w-full flex justify-between items-center py-4 px-4 md:px-6 lg:px-8"
@@ -59,7 +61,7 @@
         </div>
       </div>
     </nav>
-    <main class="mt-6 w-full md:w-5/6 lg:w-3/4 mx-auto">
+    <main class="mt-6 w-full px-2 md:w-5/6 lg:w-3/4 mx-auto">
       <!-- search form -->
       <!-- TODO: style the form -->
       <form action="#" method="get" class="w-full">
@@ -78,14 +80,15 @@
             name="query"
             id="search"
             placeholder="type then hit enter to search"
-            class="w-full h-20 placeholder:uppercase pl-14"
+            class="w-full h-20 placeholder:uppercase placeholder:text-light-textSubtle dark:placeholder:text-dark-textSubtle placeholder:text-base pl-14 bg-transparent dark:bg-transparent border-2 border-light-textSubtle dark:border-dark-textSubtle text-light-textSec dark:text-dark-textSec focus:bg-light-hover dark:bg-dark-hover focus:outline-none focus:border-link focus:ring-2 focus:ring-link focus:border-none"
           />
           <span
             class="hidden absolute top-7 right-4 z-20 text-light-textSec dark:text-dark-textSec bg-light-hover dark:bg-dark-hover p-1 px-2 rounded text-xs cursor-pointer"
             id="esc"
             >Esc</span
           >
-          <span class="absolute top-7 left-4"
+          <span
+            class="absolute top-7 left-4 text-light-text dark:text-dark-text"
             ><svg viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
               <path
                 fill-rule="evenodd"
