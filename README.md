@@ -6,10 +6,9 @@ django blog frontend
 
 ## TODO: Implement the following
 
--[x] style search form field
-
-- restyle toggle button
-- add 404 page
-- add rss feed to search
-- create the share page
-- style side bar in main page
+- [x] style search form field
+- [x] restyle toggle button
+- [x] add 404 page
+- [ ] create share page
+- [ ] style side bar in main page
+- [ ] add favicon
