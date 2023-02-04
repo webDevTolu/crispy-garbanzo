@@ -3,6 +3,9 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   darkMode: "class",
   theme: {
+    fontFamily: {
+      body: ['"Open Sans"'],
+    },
     extend: {
       colors: {
         dark: {
