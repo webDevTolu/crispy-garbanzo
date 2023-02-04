@@ -59,9 +59,9 @@
         </div>
       </div>
     </nav>
-    <main
-      class="mt-6 w-full md:w-5/6 lg:w-3/4 mx-auto grid grid-cols-1 gap-y-4 md:gap-y-6 lg:gap-y-12"
-    >
+    <main class="mt-6 w-full md:w-5/6 lg:w-3/4 mx-auto">
+      <!-- search form -->
+      <!-- TODO: style the form -->
       <form action="#" method="get" class="w-full">
         <div class="flex flex-col gap-y-2 w-full relative">
           <label
@@ -102,5 +102,171 @@
         </div>
       </form>
     </main>
+
+    <!-- search results -->
+    <div
+      class="w-full h-20 md:h-24 bg-light-hover dark:bg-dark-hover my-4 md:my-8"
+    >
+      <div
+        class="flex justify-between items-center w-full px-2 md:px-0 md:w-5/6 lg:w-3/4 mx-auto h-full"
+      >
+        <h3
+          class="text-lg md:text-xl font-medium text-light-text dark:text-dark-text"
+        >
+          Search results for: "query"
+        </h3>
+        <a href="/" class="text-link hover:text-linkHover text-sm">Home</a>
+      </div>
+    </div>
+
+    <!-- 404 results -->
+    <h4
+      class="text-base md:text-lg font-normal text-light-textSec dark:text-dark-textSec w-full px-2 md:px-0 md:w-5/6 lg:w-3/4 mx-auto"
+    >
+      No results were found for this query.
+    </h4>
+
+    <!-- 404 !== true results -->
+    <div
+      class="w-full px-2 md:px-0 md:w-5/6 lg:w-3/4 mx-auto grid grid-cols-1 divide-y-[1.5px] divide-light-textSubtle dark:divide-dark-textSubtle"
+    >
+      <div
+        class="flex flex-col gap-y-2 w-full group h-full hover:bg-light-hover dark:hover:bg-dark-hover p-4 cursor-pointer"
+      >
+        <a
+          href="#"
+          class="text-lg md:text-xl font-bold text-light-textSec dark:text-dark-textSec group-hover:text-light-textSubtle group-hover:dark:text-dark-textSubtle"
+          >What is a blog?</a
+        >
+        <p
+          class="text-sm font-light text-light-textSec dark:text-dark-textSec md:w-3/4 text-left group-hover:text-light-textSubtle group-hover:dark:text-dark-textSubtle"
+        >
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime sed
+          eligendi similique, exercitationem vel provident aut asperiores ab
+          eveniet eius...
+        </p>
+      </div>
+      <div
+        class="flex flex-col gap-y-2 w-full group h-full hover:bg-light-hover dark:hover:bg-dark-hover p-4 cursor-pointer"
+      >
+        <a
+          href="#"
+          class="text-lg md:text-xl font-bold text-light-textSec dark:text-dark-textSec group-hover:text-light-textSubtle group-hover:dark:text-dark-textSubtle"
+          >What is a blog?</a
+        >
+        <p
+          class="text-sm font-light text-light-textSec dark:text-dark-textSec md:w-3/4 text-left group-hover:text-light-textSubtle group-hover:dark:text-dark-textSubtle"
+        >
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime sed
+          eligendi similique, exercitationem vel provident aut asperiores ab
+          eveniet eius...
+        </p>
+      </div>
+      <div
+        class="flex flex-col gap-y-2 w-full group h-full hover:bg-light-hover dark:hover:bg-dark-hover p-4 cursor-pointer"
+      >
+        <a
+          href="#"
+          class="text-lg md:text-xl font-bold text-light-textSec dark:text-dark-textSec group-hover:text-light-textSubtle group-hover:dark:text-dark-textSubtle"
+          >What is a blog?</a
+        >
+        <p
+          class="text-sm font-light text-light-textSec dark:text-dark-textSec md:w-3/4 text-left group-hover:text-light-textSubtle group-hover:dark:text-dark-textSubtle"
+        >
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime sed
+          eligendi similique, exercitationem vel provident aut asperiores ab
+          eveniet eius...
+        </p>
+      </div>
+    </div>
+
+    <!-- pagination -->
+    <div
+      class="w-full md:px-0 md:w-5/6 lg:w-3/4 flex flex-col md:flex-row gap-y-3 justify-between md:items-center px-4 py-2 dark:text-dark-textSec text-light-textSec text-sm mx-auto mt-2"
+    >
+      <!-- pages -->
+      <p class="">
+        Showing <span class="font-medium">1</span> to
+        <span class="font-medium">3</span> of
+        <span class="font-medium">10</span> results.
+      </p>
+      <!-- buttons -->
+      <div class="flex items-center gap-x-4">
+        <a
+          href="#"
+          class="rounded-md border border-light-textSec dark:border-dark-textSec dark:hover:bg-dark-hover hover:bg-light-hover dark:hover:text-dark-text hover:text-light-text hover:border-none font-medium px-4 py-2"
+          >Previous</a
+        >
+        <a
+          href="#"
+          class="rounded-md border border-light-textSec dark:border-dark-textSec dark:hover:bg-dark-hover hover:bg-light-hover dark:hover:text-dark-text hover:text-light-text hover:border-none font-medium px-4 py-2"
+          >Next</a
+        >
+      </div>
+    </div>
+
+    <!-- similar posts -->
+    <div
+      class="flex flex-col gap-y-4 w-full px-2 md:px-0 md:w-5/6 lg:w-3/4 mx-auto mt-4"
+    >
+      <!-- heading -->
+      <div class="flex justify-between items-center">
+        <h3
+          class="mt-4 text-2xl md:text-3xl font-bold text-light-textSec dark:text-dark-textSec"
+        >
+          Related Posts
+        </h3>
+        <a href="#" class="text-sm font-medium text-link w-max cursor-pointer"
+          >See all</a
+        >
+      </div>
+      <!-- similar post list -->
+      <div class="flex flex-col gap-4">
+        <!-- similar post list item -->
+        <a
+          href="/detail.html"
+          class="w-full flex items-center gap-2 md:gap-4 group cursor-pointer"
+        >
+          <span
+            class="w-3 h-3 rounded-full bg-light-textSec dark:bg-dark-textSec group-hover:bg-link group-hover:dark:bg-link"
+          ></span>
+          <h4
+            class="text-base md:text-lg font-bold text-light-textSec dark:text-dark-textSec group-hover:text-link group-hover:dark:text-link"
+          >
+            What is a blog?
+          </h4>
+        </a>
+        <!-- similar post list item -->
+        <a
+          href="/detail.html"
+          class="w-full flex items-center gap-2 md:gap-4 group cursor-pointer"
+        >
+          <span
+            class="w-3 h-3 rounded-full bg-light-textSec dark:bg-dark-textSec group-hover:bg-link group-hover:dark:bg-link"
+          ></span>
+          <h4
+            class="text-base md:text-lg font-bold text-light-textSec dark:text-dark-textSec group-hover:text-link group-hover:dark:text-link"
+          >
+            What is a blog?
+          </h4>
+        </a>
+        <!-- similar post list item -->
+        <a
+          href="/detail.html"
+          class="w-full flex items-center gap-2 md:gap-4 group cursor-pointer"
+        >
+          <span
+            class="w-3 h-3 rounded-full bg-light-textSec dark:bg-dark-textSec group-hover:bg-link group-hover:dark:bg-link"
+          ></span>
+          <h4
+            class="text-base md:text-lg font-bold text-light-textSec dark:text-dark-textSec group-hover:text-link group-hover:dark:text-link"
+          >
+            What is a blog?
+          </h4>
+        </a>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>footer</footer>
   </body>
 </html>
