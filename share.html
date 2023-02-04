@@ -11,7 +11,7 @@
     <link rel="icon" type="image/svg+xml" href="/src/images/favicon.svg" />
     <link rel="icon" type="image/png" href="/src/images/favicon.png" />
   </head>
-  <body class="w-screen bg-light-background dark:bg-dark-background">
+  <body class="bg-light-background dark:bg-dark-background scrollbar-hide">
     <!-- nav -->
     <nav
       class="w-full flex justify-between items-center py-4 px-4 md:px-6 lg:px-8"
@@ -62,6 +62,170 @@
         </div>
       </div>
     </nav>
-    <h1 class="text-light-text dark:text-dark-text">share me</h1>
+
+    <!-- main -->
+    <main
+      class="w-full md:w-5/6 lg:w-3/4 mx-auto grid grid-cols-1 lg:grid-cols-5 gap-y-8 p-4 lg:p-6 mt-4 md:mt-6"
+    >
+      <!-- back -->
+      <a
+        href="/"
+        title="back home"
+        class="w-8 h-8 md:w-10 md:h-10 border-[0.5px] border-light-textSubtle dark:border-dark-textSubtle rounded-full flex justify-center items-center bg-light-hover dark:bg-dark-hover text-light-text dark:text-dark-text lg:col-span-1"
+      >
+        <svg
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          class="w-5 h-5 md:w-6 md:h-6"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M15 10a.75.75 0 01-.75.75H7.612l2.158 1.96a.75.75 0 11-1.04 1.08l-3.5-3.25a.75.75 0 010-1.08l3.5-3.25a.75.75 0 111.04 1.08L7.612 9.25h6.638A.75.75 0 0115 10z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </a>
+      <!-- content -->
+      <div class="grid grid-cols-1 gap-y-12 lg:col-span-3 w-full">
+        <h2
+          class="mt-4 text-3xl md:text-4xl font-bold text-light-text dark:text-dark-text"
+        >
+          Share "What is a blog?" by email
+        </h2>
+        <form action="#" method="post" class="flex flex-col gap-y-4 w-full">
+          <div class="flex flex-col gap-y-2">
+            <label
+              for="name"
+              class="text-sm font-medium text-light-textSec dark:text-dark-textSec cursor-pointer"
+              >Name</label
+            >
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="username"
+              required
+              class="bg-light-hover dark:bg-dark-hover placeholder:text-sm placeholder:font-normal text-base placeholder:text-light-textSec dark:placeholder:text-dark-textSec text-light-text dark:text-dark-text border-none rounded-md focus:ring-1 focus:ring-light-textSec dark:focus:ring-dark-textSec focus:outline-none shadow-md invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+            />
+          </div>
+
+          <div class="grid grid-cols-1 gap-y-2 md:grid-cols-2 gap-x-4">
+            <div class="flex flex-col gap-y-2">
+              <label
+                for="email"
+                class="text-sm font-medium text-light-textSec dark:text-dark-textSec cursor-pointer"
+                >Email</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="you@techblog.com"
+                required
+                class="bg-light-hover dark:bg-dark-hover placeholder:text-sm placeholder:font-normal text-base placeholder:text-light-textSec dark:placeholder:text-dark-textSec text-light-text dark:text-dark-text border-none rounded-md focus:ring-1 focus:ring-light-textSec dark:focus:ring-dark-textSec focus:outline-none shadow-md invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+              />
+            </div>
+
+            <div class="flex flex-col gap-y-2">
+              <label
+                for="your-email"
+                class="text-sm font-medium text-light-textSec dark:text-dark-textSec cursor-pointer"
+                >Your Email</label
+              >
+              <input
+                type="email"
+                name="your-email"
+                id="your-email"
+                placeholder="you@techblog.com"
+                required
+                class="bg-light-hover dark:bg-dark-hover placeholder:text-sm placeholder:font-normal text-base placeholder:text-light-textSec dark:placeholder:text-dark-textSec text-light-text dark:text-dark-text border-none rounded-md focus:ring-1 focus:ring-light-textSec dark:focus:ring-dark-textSec focus:outline-none shadow-md invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+              />
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-y-2">
+            <label
+              for="comments"
+              class="text-sm font-medium text-light-textSec dark:text-dark-textSec cursor-pointer"
+              >Additional Comments</label
+            >
+            <textarea
+              name="comments"
+              id="comments"
+              placeholder="add your comment"
+              class="bg-light-hover dark:bg-dark-hover placeholder:text-sm placeholder:font-normal text-base placeholder:text-light-textSec dark:placeholder:text-dark-textSec text-light-text dark:text-dark-text border-none rounded-md focus:ring-1 focus:ring-light-textSec dark:focus:ring-dark-textSec focus:outline-none shadow-md invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="md:col-span-2 bg-link rounded-md cursor-pointer text-white text-base font-medium py-2 px-4 hover:bg-linkHover focus:outline-none focus:ring-0 focus:ring-linkHover"
+          >
+            Send
+          </button>
+        </form>
+        <!-- similar posts -->
+        <div class="flex flex-col gap-y-4">
+          <!-- heading -->
+          <div class="flex justify-between items-center">
+            <h3
+              class="mt-4 text-2xl md:text-3xl font-bold text-light-text dark:text-dark-text"
+            >
+              Similar Posts
+            </h3>
+            <a
+              href="#"
+              class="text-sm font-medium text-link w-max cursor-pointer"
+              >See all</a
+            >
+          </div>
+          <!-- similar post list -->
+          <div class="flex flex-col gap-4">
+            <!-- similar post list item -->
+            <a
+              href="/detail.html"
+              class="w-full flex items-center gap-2 md:gap-4 group cursor-pointer"
+            >
+              <span
+                class="w-3 h-3 rounded-full bg-light-textSec dark:bg-dark-textSec group-hover:bg-link group-hover:dark:bg-link"
+              ></span>
+              <h4
+                class="text-base md:text-lg font-bold text-light-text dark:text-dark-text group-hover:text-link group-hover:dark:text-link"
+              >
+                What is a blog?
+              </h4>
+            </a>
+            <!-- similar post list item -->
+            <a
+              href="/detail.html"
+              class="w-full flex items-center gap-2 md:gap-4 group cursor-pointer"
+            >
+              <span
+                class="w-3 h-3 rounded-full bg-light-textSec dark:bg-dark-textSec group-hover:bg-link group-hover:dark:bg-link"
+              ></span>
+              <h4
+                class="text-base md:text-lg font-bold text-light-text dark:text-dark-text group-hover:text-link group-hover:dark:text-link"
+              >
+                What is a blog?
+              </h4>
+            </a>
+            <!-- similar post list item -->
+            <a
+              href="/detail.html"
+              class="w-full flex items-center gap-2 md:gap-4 group cursor-pointer"
+            >
+              <span
+                class="w-3 h-3 rounded-full bg-light-textSec dark:bg-dark-textSec group-hover:bg-link group-hover:dark:bg-link"
+              ></span>
+              <h4
+                class="text-base md:text-lg font-bold text-light-text dark:text-dark-text group-hover:text-link group-hover:dark:text-link"
+              >
+                What is a blog?
+              </h4>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

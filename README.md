@@ -9,6 +9,7 @@ django blog frontend
 - [x] style search form field
 - [x] restyle toggle button
 - [x] add 404 page
-- [ ] create share page
+- [x] create share page
 - [ ] style side bar in main page
-- [ ] add favicon
+- [x] add favicon
+- [ ] create tags page
