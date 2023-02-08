@@ -12,4 +12,5 @@ django blog frontend
 - [x] create share page
 - [ ] style side bar in main page
 - [x] add favicon
-- [ ] create tags page
+- [x] create tags page
+- [ ] Design the footer section
