@@ -10,7 +10,7 @@ django blog frontend
 - [x] restyle toggle button
 - [x] add 404 page
 - [x] create share page
-- [ ] style side bar in main page
+- [x] style side bar in main page
 - [x] add favicon
 - [x] create tags page
 - [x] Design the footer section
